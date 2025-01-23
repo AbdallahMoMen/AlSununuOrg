@@ -1,0 +1,20 @@
+/* Start Global Variables */
+:root {
+  --background-color: #FFCD3A;
+  --Secondtry-color: #2FABE1;
+  --text-color: #060606;
+  --shadow-color: #CCCCCC;
+}
+
+/* End Global Variables */
+
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+/* End Global Rules */
