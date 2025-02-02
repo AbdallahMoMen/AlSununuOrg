@@ -1,20 +1,728 @@
-/* Start Global Variables */
+/* Starting Of Global Variables */
 :root {
   --background-color: #FFCD3A;
-  --Secondtry-color: #2FABE1;
+  --secondry-color: #2FABE1;
   --text-color: #060606;
   --shadow-color: #CCCCCC;
+  --title-color: #FCFCF7;
+  --head-padding: 15px;
+  --secondry-padding: 12px;
+  --section-margin: 100px;
+  --card-margin: 50px;
 }
 
-/* End Global Variables */
+/* Ending Of Global Variables */
 
-/* Start Global Rules */
+/* Starting Of Global Rules */
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", serif;
+html {
+  scroll-behavior: smooth;
 }
 
-/* End Global Rules */
+body {
+  font-family: "Poppins", serif;
+  background-color: hsl(198, 75%, 95%);
+  color: var(--text-color);
+}
+
+section {
+  max-width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: var(--secondry-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  padding-inline: var(--head-padding);
+  margin-inline: auto;
+}
+
+.section {
+  margin-bottom: var(--section-margin);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Ending Of Global Rules */
+
+/* Starting Of FrameWork Classses */
+
+.list-visible {
+  display: flex !important;
+}
+
+.transition-all {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+/* Starting Of Activities Header Style*/
+
+.section-header {
+  display: flex;
+  justify-content: center;
+}
+
+.section-header .header-text {
+  width: fit-content;
+  padding: var(--head-padding) 30px;
+  background-color: var(--background-color);
+  border: 1px solid #00000049;
+  color: var(--secondry-color);
+}
+
+/* Ending Of Activities Header Style*/
+
+.card {
+  box-shadow: 0 2px 2px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--head-padding);
+  position: relative;
+  margin-bottom: var(--card-margin);
+}
+
+.card-text {
+  color: var(--secondry-color);
+  padding: 0 var(--head-padding);
+  line-height: 1.5;
+  word-break: break-word;
+  margin-bottom: var(--section-margin);
+}
+
+.card-button {
+  width: fit-content;
+  text-wrap: nowrap;
+  padding: var(--secondry-padding);
+  background-color: var(--background-color);
+  color: var(--secondry-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+
+.flag {
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+/* Starting Of Germany Flag Style */
+
+
+.germany {
+  display: flex;
+  flex-direction: column;
+}
+
+.germany span {
+  width: 24px;
+  height: 5px;
+}
+
+.germany span:first-child {
+  background-color: #455A64;
+}
+
+.germany span:nth-child(2) {
+  background-color: #FF3D00;
+}
+
+.germany span:last-child {
+  background-color: #FFC107;
+}
+
+/* Ending Of Germany Flag Style */
+
+/* Ending Of FrameWork Classses */
+
+/* Starting Of Header Style */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondry-color);
+}
+
+header .container .nav-container {
+  display: flex;
+  align-items: center;
+  gap: var(--head-padding);
+}
+
+header .container .nav-container .nav {
+  display: flex;
+  align-items: center;
+  gap: var(--secondry-padding);
+}
+
+header .container .nav-container .nav li {
+  color: var(--title-color);
+}
+
+header .container .nav-container .nav li:last-child {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+header .container .nav-container .nav li a {
+  font-family: "Open Sans", serif;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+header .container .nav-container .nav li a:hover {
+  color: var(--background-color);
+}
+
+header .container .nav-container .nav li:last-child a {
+  color: var(--secondry-color);
+}
+
+.lang {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header .container .nav-container .lang:hover {
+  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color);
+}
+
+.lang img {
+  width: 24px;
+  height: 24px;
+}
+
+.lang-list {
+  width: fit-content;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  opacity: 0;
+  transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -ms-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+}
+
+.lang-list .lang {
+  width: 100%;
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: var(--background-color);
+  color: var(--secondry-color);
+  padding: 5px;
+  border: 1px solid var(--shadow-color);
+  border-radius: unset;
+  -webkit-border-radius: unset;
+  -moz-border-radius: unset;
+  -ms-border-radius: unset;
+  -o-border-radius: unset;
+}
+
+.list-icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.list-icon:hover {
+  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color), 0 0 30px var(--background-color);
+}
+
+.list-icon img {
+  width: 32px;
+  height: 32px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/* Ending Of Header Style */
+
+/* Starting Of Landing Style */
+.landing-section {
+  height: 80vh;
+  background-image: url("./../content/images/landing.png");
+  background-position: top;
+  background-size: cover;
+  aspect-ratio: 16/5;
+}
+
+/* Ending Of Landing Style */
+
+/* Starting Of mission Style */
+
+.mission-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  border-radius: var(--head-padding);
+  -webkit-border-radius: var(--head-padding);
+  -moz-border-radius: var(--head-padding);
+  -ms-border-radius: var(--head-padding);
+  -o-border-radius: var(--head-padding);
+}
+
+.mission-section .container .mission-text {
+  max-width: 45%;
+  padding-inline: var(--secondry-padding)
+}
+
+.mission-section .container .mission-text h2 {
+  color: var(--secondry-color);
+}
+
+.mission-section .container .mission-text p {
+  padding: 0 var(--secondry-padding) var(--secondry-padding);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.mission-section .container .mission-poster {
+  max-width: 45%;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.mission-section .container .mission-poster img {
+  object-position: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/* .mission-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: var(--head-padding);
+  background-color: var(--background-color);
+}
+
+.mission-section .container .mission-text {
+  padding: var(--head-padding);
+  margin-left: var(--card-margin);
+  max-width: 50%;
+}
+
+.mission-section .container .mission-text h2 {
+  color: var(--secondry-color);
+}
+
+.mission-section .container .mission-text p {
+  line-height: 1.3;
+
+}
+
+.mission-section .container .mission-poster {
+  padding: var(--head-padding);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.mission-section .container .mission-poster img {
+  width: 300px;
+  height: 200px;
+  object-position: unset;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+} */
+
+/* Ending Of mission Style */
+
+/* Starting Of Current Activities Style */
+
+.current-activities {
+  margin-top: var(--head-padding);
+}
+
+.current-activities .container .activities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--head-padding);
+}
+
+.current-activities .container .activities-container .activity .image-container img {
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+/* Ending Of Current Activities Style */
+
+/* Starting Of Erasmus Activities Style */
+
+.erasmus-activities .erasmus-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--head-padding);
+}
+
+.erasmus-activities .container .erasmus-info .erasmus-text {
+  width: 100%;
+  line-height: 2;
+  font-size: 16px;
+  order: 2;
+}
+
+.erasmus-activities .container .erasmus-info .erasmus-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--secondry-padding);
+  -webkit-border-radius: var(--secondry-padding);
+  -moz-border-radius: var(--secondry-padding);
+  -ms-border-radius: var(--secondry-padding);
+  -o-border-radius: var(--secondry-padding);
+}
+
+.erasmus-activities .container .erasmus-info .erasmus-image img {
+  border-radius: var(--card-margin);
+  -webkit-border-radius: var(--card-margin);
+  -moz-border-radius: var(--card-margin);
+  -ms-border-radius: var(--card-margin);
+  -o-border-radius: var(--card-margin);
+}
+
+.erasmus-activities .activities-container {
+  margin-top: var(--section-margin);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--head-padding);
+}
+
+.erasmus-activities .activities-container .image-container {
+  height: 425px;
+}
+
+.erasmus-activities .activities-container .erasmus {
+  border-radius: var(--secondry-padding);
+  -webkit-border-radius: var(--secondry-padding);
+  -moz-border-radius: var(--secondry-padding);
+  -ms-border-radius: var(--secondry-padding);
+  -o-border-radius: var(--secondry-padding);
+}
+
+.erasmus-activities .activities-container .image-container img {
+  border-radius: var(--secondry-padding);
+  -webkit-border-radius: var(--secondry-padding);
+  -moz-border-radius: var(--secondry-padding);
+  -ms-border-radius: var(--secondry-padding);
+  -o-border-radius: var(--secondry-padding);
+}
+
+.erasmus-activities .activities-container .card-text {
+  color: var(--text-color);
+}
+
+.erasmus-activities .activities-container .card-text ul li {
+  gap: var(--secondry-padding);
+}
+
+.erasmus-activities .activities-container .card-text ul li i {
+  color: #00bf00;
+}
+
+.flag.spain {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg');
+  background-size: contain;
+}
+
+/* Ending Of Erasmus Activities Style */
+
+/* Starting Of joinning section Style */
+
+.joinning .container {
+  display: flex;
+  justify-content: center;
+}
+
+.joinning .container .text-container {
+  width: 80%;
+  padding: var(--secondry-padding);
+  position: relative;
+  box-shadow: 0 2px 2px #00000049;
+  line-height: 1.5;
+}
+
+.joinning .container .text-container p:last-of-type {
+  padding-bottom: var(--section-margin);
+}
+
+/* Ending Of joinning section Style */
+
+/* Starting Of Footer section Style */
+
+footer {
+  background-color: var(--secondry-color);
+  color: var(--title-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--card-margin);
+  align-items: center;
+  padding: 20px;
+}
+
+footer .contact {
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .media {
+  margin-top: var(--secondry-padding);
+}
+
+footer .media ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--secondry-padding);
+}
+
+footer .media ul li {
+  padding: var(--secondry-padding) 0;
+}
+
+footer .media ul li i {
+  font-size: 32px;
+}
+
+footer .copyright ul {
+  display: flex;
+  gap: var(--secondry-padding);
+}
+
+/* Ending Of Footer section Style */
+
+/* Starting Of Media Quaries */
+
+/* Small Screen*/
+
+@media (max-width: 767px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .section-header .header-text {
+    font-size: 20px;
+  }
+
+  header .container .nav-container .nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    text-align: center;
+  }
+
+  header .container .nav-container .nav li {
+    width: 100%;
+    padding: var(--head-padding);
+    border-bottom: 1px solid var(--shadow-color);
+  }
+
+  header .container .nav-container .nav li a {
+    color: var(--secondry-color);
+  }
+
+  header .container .nav-container .nav li a:hover {
+    color: var(--text-color);
+  }
+
+  .list-icon {
+    display: flex;
+  }
+
+  .mission-section .container {
+    flex-direction: column;
+  }
+
+  .mission-section .container .mission-text {
+    max-width: unset;
+  }
+
+  .mission-section .container .mission-text p {
+    line-height: 1.1;
+  }
+
+  .mission-section .container .mission-poster {
+    max-width: 90%;
+    margin-block: var(--secondry-padding)
+  }
+
+  footer .copyright ul {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: var(--secondry-padding);
+    text-align: center;
+  }
+
+}
+
+/* Medium Screen*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .mission-section .container .mission-text p {
+    font-size: 16px;
+  }
+
+}
+
+/* Large Screens */
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+
+  .mission-section .container {
+    padding-block: var(--head-padding);
+  }
+
+  .mission-section .container .mission-text p {
+    font-size: 20px;
+  }
+
+  .erasmus-activities .erasmus-info {
+    flex-direction: row;
+  }
+
+  .erasmus-activities .container .erasmus-info .erasmus-text {
+    width: 50%;
+    font-size: 20px;
+    order: unset;
+  }
+
+  .erasmus-activities .container .erasmus-info .erasmus-image {
+    width: 50%;
+  }
+
+}
+
+/* X-Large Screens */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+
+  .erasmus-activities .container .erasmus-info .erasmus-text {
+    padding: var(--card-margin);
+  }
+}
+
+/* XX-Large Screens */
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+/* Ending Of Media Quaries */
