@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Activities</title>
+    <title>Aktivitäten</title>
     <!-- Linking Normalize CSS Library -->
     <link rel="stylesheet" href="./../css/normalize.css" />
     <!-- Linking CSS Style File -->
@@ -16,13 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -31,17 +25,19 @@
 
     <header>
       <div class="container">
-        <h1>AlSununu</h1>
+        <h1>
+          <a href="./index-rtl.html"><img src="./../content/images/logo.png" alt="" /></a>
+        </h1>
         <div class="nav-container">
           <ul class="nav transition-all">
-            <li><a class="transition-all" href="">Startseite</a></li>
-            <li><a class="transition-all" href="">Über uns</a></li>
-            <li><a class="transition-all" href="">Aktivitäten</a></li>
-            <li><a class="transition-all" href="">Erasmus+</a></li>
-            <li><a class="transition-all" href="">Kontakt</a></li>
+            <li><a class="transition-all" href="./index-rtl.html">الصفحة الرئيسية</a></li>
+            <li><a class="transition-all" href="./uberuns-rtl.html">عن الفريق</a></li>
+            <li><a class="transition-all" href="./activities-rtl.html">الانشطة</a></li>
+            <li><a class="transition-all" href="./erasmus-rtl.html">Erasmus+</a></li>
+            <li><a class="transition-all" href="./contact-rtl.html">تواصل معنا</a></li>
           </ul>
           <div class="list-icon transition-all">
-            <img src="./../content/images/list-icon.png" alt="" />
+            <i class="fa-solid fa-list-ul"></i>
           </div>
           <div class="lang transition-all">
             <img src="./../content/images/arabic-flag.png" alt="Arabic Flag is Missing" />
@@ -80,7 +76,7 @@
     <section class="current-activities">
       <div class="container">
         <div class="section-header">
-          <h2 class="header-text">Aktuelle Aktivitäten</h2>
+          <h2 class="header-text">الانشطة الحالية</h2>
         </div>
         <div class="activities-container">
           <div class="activity card">
@@ -90,12 +86,38 @@
             <div class="card-info">
               <p class="card-title">Jugendtreff – Dein Ort zum Entspannen und Mitmachen!</p>
               <p class="card-text">
-                Der Jugendtreff ist der perfekte Ort für alle ab 15 Jahren, die neue Leute
-                kennenlernen, Spaß haben und ihre Freizeit aktiv gestalten möchten. Hier erwarten
-                dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
+                الموسيقى تلامس القلوب، تلهم وتوحد الناس، تتحدث إلى الروح وترافقنا في الحياة
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
+            <a class="card-button">Zur Anmeldung</a>
+            <div class="activity-info">
+              <h3>Activities info</h3>
+              <a href="./">Join Our Whatsup Group</a>
+              <p class="time">12:35 - 13:30</p>
+              <p class="location">Passage 13, 016122 Halle Saale</p>
+              <p class="hall">Clubraum</p>
+              <span class="btn"><i class="fa-solid fa-x"></i></span>
+            </div>
+          </div>
+          <div class="activity card">
+            <div class="image-container">
+              <img src="./../content/images/event-image.png" alt="Image not available" />
+            </div>
+            <div class="card-info">
+              <p class="card-title">Jugendtreff – Dein Ort zum Entspannen und Mitmachen!</p>
+              <p class="card-text">
+                سواء كنت مبتدئًا أو محترفًا – الجميع مرحب بهم! تعال وانضم إلينا
+              </p>
+            </div>
+            <a class="card-button">Zur Anmeldung</a>
+            <div class="activity-info">
+              <h3>Activities info</h3>
+              <a href="./">Join Our Whatsup Group</a>
+              <p class="time">12:35 - 13:30</p>
+              <p class="location">Passage 13, 016122 Halle Saale</p>
+              <p class="hall">Clubraum</p>
+              <span class="btn"><i class="fa-solid fa-x"></i></span>
+            </div>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -109,7 +131,15 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
+            <a class="card-button">Zur Anmeldung</a>
+            <div class="activity-info">
+              <h3>Activities info</h3>
+              <a href="./">Join Our Whatsup Group</a>
+              <p class="time">12:35 - 13:30</p>
+              <p class="location">Passage 13, 016122 Halle Saale</p>
+              <p class="hall">Clubraum</p>
+              <span class="btn"><i class="fa-solid fa-x"></i></span>
+            </div>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -123,7 +153,15 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
+            <a class="card-button">Zur Anmeldung</a>
+            <div class="activity-info">
+              <h3>Activities info</h3>
+              <a href="./">Join Our Whatsup Group</a>
+              <p class="time">12:35 - 13:30</p>
+              <p class="location">Passage 13, 016122 Halle Saale</p>
+              <p class="hall">Clubraum</p>
+              <span class="btn"><i class="fa-solid fa-x"></i></span>
+            </div>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -137,7 +175,15 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
+            <a class="card-button">Zur Anmeldung</a>
+            <div class="activity-info">
+              <h3>Activities info</h3>
+              <a href="./">Join Our Whatsup Group</a>
+              <p class="time">12:35 - 13:30</p>
+              <p class="location">Passage 13, 016122 Halle Saale</p>
+              <p class="hall">Clubraum</p>
+              <span class="btn"><i class="fa-solid fa-x"></i></span>
+            </div>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -151,21 +197,15 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
-          </div>
-          <div class="activity card">
-            <div class="image-container">
-              <img src="./../content/images/event-image.png" alt="Image not available" />
+            <a class="card-button">Zur Anmeldung</a>
+            <div class="activity-info">
+              <h3>Activities info</h3>
+              <a href="./">Join Our Whatsup Group</a>
+              <p class="time">12:35 - 13:30</p>
+              <p class="location">Passage 13, 016122 Halle Saale</p>
+              <p class="hall">Clubraum</p>
+              <span class="btn"><i class="fa-solid fa-x"></i></span>
             </div>
-            <div class="card-info">
-              <p class="card-title">Jugendtreff – Dein Ort zum Entspannen und Mitmachen!</p>
-              <p class="card-text">
-                Der Jugendtreff ist der perfekte Ort für alle ab 15 Jahren, die neue Leute
-                kennenlernen, Spaß haben und ihre Freizeit aktiv gestalten möchten. Hier erwarten
-                dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
-              </p>
-            </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
         </div>
       </div>
@@ -193,7 +233,6 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -207,7 +246,6 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -221,7 +259,6 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -235,7 +272,6 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -249,7 +285,6 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
           <div class="activity card">
             <div class="image-container">
@@ -263,7 +298,6 @@
                 dich spannende Aktivitäten, freundliche Gesichter und eine entspannte Atmosphäre.
               </p>
             </div>
-            <a class="card-button" href="#">Zur Anmeldung</a>
           </div>
         </div>
       </div>
@@ -273,10 +307,8 @@
 
     <!-- Starting Of Footer Markup -->
 
-    <footer>
-      <div class="image-container">
-        <img src="" alt="Logo Is Missing" />
-      </div>
+    <footer dir="ltr">
+      <img src="./../content/images/logo.png" alt="Logo Is Missing" />
       <div class="contact">
         <div class="info">
           Kontakt:

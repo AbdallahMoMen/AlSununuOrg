@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
+    <title>Kontakt</title>
     <!-- Linking Normalize CSS Library -->
     <link rel="stylesheet" href="./../css/normalize.css" />
     <!-- Linking CSS Style File -->
-    <link rel="stylesheet" href="./../css/about.css" />
+    <link rel="stylesheet" href="./../css/contact.css" />
     <!-- Linking FontAwasome Library -->
     <link rel="stylesheet" href="./../css/all.min.css" />
     <!-- Linking Main Font From Google Fonts-->
@@ -29,17 +29,19 @@
 
     <header>
       <div class="container">
-        <h1 class="logo">AlSununu</h1>
+        <h1>
+          <a href="./../index.html"><img src="./../content/images/logo.png" alt="" /></a>
+        </h1>
         <div class="nav-container">
           <ul class="nav transition-all">
-            <li><a class="transition-all" href="">Startseite</a></li>
-            <li><a class="transition-all" href="">Über uns</a></li>
-            <li><a class="transition-all" href="">Aktivitäten</a></li>
-            <li><a class="transition-all" href="">Erasmus+</a></li>
-            <li><a class="transition-all" href="">Kontakt</a></li>
+            <li><a class="transition-all" href="./../index.html">Startseite</a></li>
+            <li><a class="transition-all" href="./uberuns.html">Über uns</a></li>
+            <li><a class="transition-all" href="./activities.html">Aktivitäten</a></li>
+            <li><a class="transition-all" href="./erasmus.html">Erasmus+</a></li>
+            <li><a class="transition-all" href="./contact.html">Kontakt</a></li>
           </ul>
           <div class="list-icon transition-all">
-            <img src="./../content/images/list-icon.png" alt="" />
+            <i class="fa-solid fa-list-ul"></i>
           </div>
           <div class="lang transition-all">
             <div class="germany">
@@ -51,7 +53,7 @@
         </div>
         <ul class="lang-list">
           <li title="Germany">
-            <a class="lang transition-all" href="./about.html"
+            <a class="lang transition-all" href="./contact.html"
               ><span>Germany</span>
               <div class="germany">
                 <span class="first"></span>
@@ -60,7 +62,7 @@
             ></a>
           </li>
           <li title="Arabic">
-            <a class="lang transition-all" href="./about-rtl.html">
+            <a class="lang transition-all" href="./contact-rtl.html">
               <span>Arabic</span>
               <img src="./../content/images/arabic-flag.png" alt="Arabic Flag is Missing" />
             </a>
@@ -71,18 +73,39 @@
 
     <!-- End Of Header Markup -->
 
-    <!-- Start Of Landing Markup -->
-    <section class="landing">
-      <img src="./../content/images/aboutus-landing.png" alt="" />
-    </section>
-    <!-- End Of Landing Markup -->
+    <div class="container form">
+      <form action="https://formsubmit.co/wingsofjustice0@gmail.com" method="POST" id="contact">
+        <input type="hidden" name="subject" value="New Contact Form Submission" />
+        <div>
+          <label for="name">Vor-Nachname</label>
+          <input type="text" id="name" name="name" placeholder="" required />
+        </div>
+        <div>
+          <label for="city">Stadt</label>
+          <input type="text" id="city" name="city" placeholder="" required />
+        </div>
+        <div>
+          <label for="mail">Email_Adresse</label>
+          <input type="email" id="mail" name="email" placeholder="" required />
+        </div>
+        <div>
+          <label for="phone">Handy_Nummer</label>
+          <input type="tel" id="phone" name="phone" placeholder="" required />
+        </div>
+        <div>
+          <label for="toughts">Deine Nachricht</label>
+          <textarea id="toughts" name="message"></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit">Nachrichten senden</button>
+        </div>
+      </form>
+    </div>
 
     <!-- Starting Of Footer Markup -->
 
     <footer>
-      <div class="image-container">
-        <img src="" alt="Logo Is Missing" />
-      </div>
+      <img src="./../content/images/logo.png" alt="Logo Is Missing" />
       <div class="contact">
         <div class="info">
           Kontakt:

@@ -6,10 +6,12 @@
     <title>AlSununu</title>
     <!-- Linking Normalize CSS Library -->
     <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- Linking CSS Style File -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Linking Swiper CSS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Linking FontAwasome Library -->
     <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Linking CSS Style File -->
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- Linking Main Font From Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,17 +31,21 @@
 
     <header>
       <div class="container">
-        <h1>AlSununu</h1>
+        <h1>
+          <a href="./index.html"><img src="./content/images/logo.png" alt="" /></a>
+        </h1>
         <div class="nav-container">
           <ul class="nav transition-all">
-            <li><a class="transition-all" href="">Startseite</a></li>
-            <li><a class="transition-all" href="">Über uns</a></li>
-            <li><a class="transition-all" href="">Aktivitäten</a></li>
-            <li><a class="transition-all" href="">Erasmus+</a></li>
-            <li><a class="transition-all" href="">Kontakt</a></li>
+            <li><a class="transition-all" href="./index.html">Startseite</a></li>
+            <li><a class="transition-all" href="./pages/uberuns.html">Über uns</a></li>
+            <li><a class="transition-all" href="./pages/activities.html">Aktivitäten</a></li>
+            <li><a class="transition-all" href="./pages/erasmus.html">Erasmus+</a></li>
+            <li class="contact-button">
+              <a class="transition-all" href="./pages/contact.html">Kontakt</a>
+            </li>
           </ul>
           <div class="list-icon transition-all">
-            <img src="./content/images/list-icon.png" alt="" />
+            <i class="fa-solid fa-list-ul"></i>
           </div>
           <div class="lang transition-all">
             <div class="germany">
@@ -58,7 +64,6 @@
                 <span class="middle"></span>
                 <span class="last"></span></div
             ></a>
-            <!-- <img src="./content/images/germany-flag.png" alt="Germany Flag is Missing" /> -->
           </li>
           <li title="Arabic">
             <a class="lang transition-all" href="./pages/index-rtl.html">
@@ -74,7 +79,9 @@
 
     <!-- Start Of Landing Markup -->
 
-    <section class="landing-section"></section>
+    <section class="landing">
+      <img src="./content/images/" alt="" />
+    </section>
 
     <!-- End Of Landing Markup -->
 
@@ -100,36 +107,99 @@
 
     <!-- Starting Of Current Activities Markup -->
 
-    <section class="current-activities">
+    <section class="current-activities section">
       <div class="container">
         <div class="section-header">
           <h2 class="header-text">Aktuelle Aktivitäten</h2>
         </div>
-        <div class="activities-container">
-          <div class="activity card">
-            <div class="image-container">
+        <div class="swiper">
+          <div class="activities-container swiper-wrapper">
+            <div class="activity card swiper-slide">
               <img src="./content/images/event-image.png" alt="Image not available" />
+              <p class="card-text">
+                Egal ob Anfänger oder Profi – alle sind herzlich willkommen! Komm vorbei und bleib
+                auch im Winter aktiv!
+              </p>
+              <a class="card-button">Zur Anmeldung</a>
+              <div class="activity-info">
+                <h3>Activities info</h3>
+                <a href="./">Join Our Whatsup Group</a>
+                <p class="time">12:35 - 13:30</p>
+                <p class="location">Passage 13, 016122 Halle Saale</p>
+                <p class="hall">Clubraum</p>
+                <span class="btn"><i class="fa-solid fa-x"></i></span>
+              </div>
             </div>
-            <p class="card-text">
-              Egal ob Anfänger oder Profi – alle sind herzlich willkommen! Komm vorbei und bleib
-              auch im Winter aktiv!
-            </p>
-            <a class="card-button" href="#">Zur Anmeldung</a>
-          </div>
-          <div class="activity card">
-            <div class="image-container">
+            <div class="activity card swiper-slide">
               <img src="./content/images/event-image.png" alt="Image not available" />
+              <p class="card-text">Jugendtreff – Dein Ort zum Entspannen und Mitmachen!</p>
+              <a class="card-button">Zur Anmeldung</a>
+              <div class="activity-info">
+                <h3>Activities info</h3>
+                <a href="./">Join Our Whatsup Group</a>
+                <p class="time">12:35 - 13:30</p>
+                <p class="location">Passage 13, 016122 Halle Saale</p>
+                <p class="hall">Clubraum</p>
+                <span class="btn"><i class="fa-solid fa-x"></i></span>
+              </div>
             </div>
-            <p class="card-text">Jugendtreff – Dein Ort zum Entspannen und Mitmachen!</p>
-            <a class="card-button" href="#">Zur Anmeldung</a>
-          </div>
-          <div class="activity card">
-            <div class="image-container">
+            <div class="activity card swiper-slide">
               <img src="./content/images/event-image.png" alt="Image not available" />
+              <p class="card-text">Musik – Der Klang, der verbindet</p>
+              <a class="card-button">Zur Anmeldung</a>
+              <div class="activity-info">
+                <h3>Activities info</h3>
+                <a href="./">Join Our Whatsup Group</a>
+                <p class="time">12:35 - 13:30</p>
+                <p class="location">Passage 13, 016122 Halle Saale</p>
+                <p class="hall">Clubraum</p>
+                <span class="btn"><i class="fa-solid fa-x"></i></span>
+              </div>
             </div>
-            <p class="card-text">Musik – Der Klang, der verbindet</p>
-            <a class="card-button" href="#">Zur Anmeldung</a>
+            <div class="activity card swiper-slide">
+              <img src="./content/images/event-image.png" alt="Image not available" />
+              <p class="card-text">Musik – Der Klang, der verbindet</p>
+              <a class="card-button">Zur Anmeldung</a>
+              <div class="activity-info">
+                <h3>Activities info</h3>
+                <a href="./">Join Our Whatsup Group</a>
+                <p class="time">12:35 - 13:30</p>
+                <p class="location">Passage 13, 016122 Halle Saale</p>
+                <p class="hall">Clubraum</p>
+                <span class="btn"><i class="fa-solid fa-x"></i></span>
+              </div>
+            </div>
+            <div class="activity card swiper-slide">
+              <img src="./content/images/event-image.png" alt="Image not available" />
+              <p class="card-text">Musik – Der Klang, der verbindet</p>
+              <a class="card-button">Zur Anmeldung</a>
+              <div class="activity-info">
+                <h3>Activities info</h3>
+                <a href="./">Join Our Whatsup Group</a>
+                <p class="time">12:35 - 13:30</p>
+                <p class="location">Passage 13, 016122 Halle Saale</p>
+                <p class="hall">Clubraum</p>
+                <span class="btn"><i class="fa-solid fa-x"></i></span>
+              </div>
+            </div>
+            <div class="activity card swiper-slide">
+              <img src="./content/images/event-image.png" alt="Image not available" />
+              <p class="card-text">Musik – Der Klang, der verbindet</p>
+              <a class="card-button">Zur Anmeldung</a>
+              <div class="activity-info">
+                <h3>Activities info</h3>
+                <a href="./">Join Our Whatsup Group</a>
+                <p class="time">12:35 - 13:30</p>
+                <p class="location">Passage 13, 016122 Halle Saale</p>
+                <p class="hall">Clubraum</p>
+                <span class="btn"><i class="fa-solid fa-x"></i></span>
+              </div>
+            </div>
           </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -218,7 +288,7 @@
             Dein Weg zu uns:Klicke auf den Anmeldungslink und werde Teil unseres Teams. Wir freuen
             uns darauf, dich kennenzulernen! 😊
           </p>
-          <a class="card-button" href="#">Anmeldungslink</a>
+          <a class="card-button" href="./pages/erasmus-contact.html">Anmeldungslink</a>
         </div>
       </div>
     </section>
@@ -228,9 +298,7 @@
     <!-- Starting Of Footer Markup -->
 
     <footer>
-      <div class="image-container">
-        <img src="" alt="Logo Is Missing" />
-      </div>
+      <img src="./content/images/logo.png" alt="Logo Is Missing" />
       <div class="contact">
         <div class="info">
           Kontakt:
@@ -267,6 +335,9 @@
     </footer>
 
     <!-- Ending Of Footer Markup -->
+
+    <!-- Linking Swiper JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Linking JavaScript File -->
     <script src="./js/main.js"></script>
